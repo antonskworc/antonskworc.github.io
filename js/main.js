@@ -1,6 +1,6 @@
 $(window).load(function() {
 	
-    //scroll to top
+    // Scroll to top
     var scrollTimeout;
 
     $('a.scroll-top').click(function () {
@@ -23,7 +23,7 @@ $(window).load(function() {
         }
     });
 	
-	//Smooth Scrolling https://css-tricks.com/snippets/jquery/smooth-scrolling/
+	// Smooth Scrolling https://css-tricks.com/snippets/jquery/smooth-scrolling/
     $(function () {
         $('a[href*=#]:not([href=#])').click(function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
