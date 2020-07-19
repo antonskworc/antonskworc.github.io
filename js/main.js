@@ -1,5 +1,28 @@
 $(window).load(function() {
-	
+    //projects spoiler
+
+    $('.timeline-item-trigger i').click(function () {
+        if ($(this).hasClass('fa fa-plus')) {
+            $(this).parent().parent().find('.timeline-item-content-spoiler').toggle(300);
+            $(this).removeClass('fa fa-plus').addClass('fa fa-minus');
+        } else {
+            $(this).parent().parent().find('.timeline-item-content-spoiler').toggle(300);
+            $(this).removeClass('fa fa-minus').addClass('fa fa-plus');
+        }
+    });
+
+    $('.timeline-item-content>h3').click(function () {
+        $trigger = $(this).parent().parent().find('.timeline-item-trigger i');
+        if ($trigger.hasClass('fa fa-plus')) {
+            $trigger.removeClass('fa fa-plus').addClass('fa fa-minus');
+            $(this).parent().find('.timeline-item-content-spoiler').toggle(300);
+        } else {
+            $trigger.removeClass('fa fa-minus').addClass('fa fa-plus');
+            $(this).parent().find('.timeline-item-content-spoiler').toggle(300);
+
+        }
+    });
+    
     // Scroll to top
     var scrollTimeout;
 
