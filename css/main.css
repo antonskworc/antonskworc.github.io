@@ -313,17 +313,17 @@ a:hover {
 
 /*Project-timeline style*/
 
-.projects-timeline {
+.timeline {
     background: rgba(0, 0, 0, 0) url("../img/line.png") repeat-y scroll 126px 0;
 }
 
-.projects-timeline-item {
+.timeline-item {
     margin-bottom: 30px;
     overflow: hidden;
     position: relative;
 }
 
-.projects-timeline-item-trigger {
+.timeline-item-trigger {
     margin: 13px 12px 0 4px;
     background: #3bc2c8;
     border-radius: 136px;
@@ -337,7 +337,7 @@ a:hover {
     width: 46px;
 }
 
-.projects-timeline-item-head {
+.timeline-item-head {
     margin: 12px 15px 5px 104px;
     /*background: #fba24e;*/
 	background: #57209c;
@@ -352,8 +352,8 @@ a:hover {
     width: 46px;
 }
 
-.projects-timeline-item-content,
-.projects-timeline-item-headtext {
+.timeline-item-content,
+.timeline-item-headtext {
     padding: 10px 30px;
     /*background-color: #f5f5f5;*/
 	background-color: #d6dbe9;
@@ -364,7 +364,7 @@ a:hover {
     width: 545px;
 }
 
-.projects-timeline-item-content>h3 {
+.timeline-item-content>h3 {
     margin: 10px 0 10px;
     color: #363636;
     cursor: pointer;
@@ -374,12 +374,12 @@ a:hover {
     font-size: 24px;
 }
 
-.projects-timeline-item-arrow {
+.timeline-item-arrow {
     display: block;
     position: relative;
 }
 
-.projects-timeline-item-arrow i {
+.timeline-item-arrow i {
     /*background-color: #f5f5f5;*/
 	background-color: #d6dbe9;
     border-left: 1px solid #cccccc;
@@ -394,7 +394,7 @@ a:hover {
     z-index: 10;
 }
 
-.projects-timeline-item-headtext h3 {
+.timeline-item-headtext h3 {
     margin: 15px 0;
     color: #363636;
     /*font-family: PT Sans;*/
@@ -403,7 +403,7 @@ a:hover {
     font-size: 24px;
 }
 
-.projects-timeline-item-content-spoiler h3 {
+.timeline-item-content-spoiler h3 {
     margin-bottom: 10px;
     /*font-family: PT Sans;*/
     font-size: 18px;
