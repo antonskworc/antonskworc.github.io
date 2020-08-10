@@ -11,7 +11,7 @@ $(window).load(function() {
         }
     });
 
-    $('.timeline-item-content>h3').click(function () {
+    $('.timeline-item-content > h3').click(function () {
         $trigger = $(this).parent().parent().find('.timeline-item-trigger i');
         if ($trigger.hasClass('fa fa-plus')) {
             $trigger.removeClass('fa fa-plus').addClass('fa fa-minus');
@@ -27,7 +27,7 @@ $(window).load(function() {
     var scrollTimeout;
 
     $('a.scroll-top').click(function () {
-        $('html,body').animate({
+        $('html, body').animate({
             scrollTop: 0
         }, 500);
         return false;
@@ -53,7 +53,7 @@ $(window).load(function() {
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
-                    $('html,body').animate({
+                    $('html, body').animate({
                         scrollTop: target.offset().top
                     }, 1000);
                     return false;
