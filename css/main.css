@@ -407,6 +407,52 @@ a:hover {
 }
 
 
+/*Contact styles*/
+
+#contact > .papers > .section-content > p {
+    margin: 14px 83px 14px 93px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.contact-list {
+    text-align: center;
+}
+
+.contact-list-first-col,
+.contact-list-second-col {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.contact-list-first-col p,
+.contact-list-second-col p {
+    line-height: 40px;
+    margin: 15px 60px 15px 20px;
+    font-size: 15px;
+}
+
+.contact-list-first-col > li > i,
+.contact-list-second-col > li > i {
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #2914e0;
+    color: #ffffff;
+}
+
+.hhicon-contacts{
+    font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+    text-indent: 1px;
+}
+
+
+
 /*Scroll to top block's style*/
 
 .scroll-top {
