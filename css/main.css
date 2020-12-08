@@ -318,15 +318,8 @@ a:hover {
     position: relative;
 }
 
-.timeline-item-date {
-    margin-top: 25px;
-    width: 100px;
-    float: left;
-    font-size: 16px;
-}
-
 .timeline-item-trigger {
-    margin: 13px 12px 0 4px;
+    margin: 13px 12px 0 104px;
     background: #3bc2c8;
     border-radius: 136px;
     color: #ffffff;
