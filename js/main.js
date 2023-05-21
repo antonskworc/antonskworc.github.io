@@ -1,7 +1,7 @@
-$(window).load(function() {
+$(window).on('load', function() {
     //projects spoiler
 
-    $('.timeline-item-trigger i').click(function () {
+    $('.timeline-item-trigger i').on('click', function () {
         if ($(this).hasClass('fa fa-plus')) {
             $(this).parent().parent().find('.timeline-item-content-spoiler').toggle(300);
             $(this).removeClass('fa fa-plus').addClass('fa fa-minus');
@@ -11,7 +11,7 @@ $(window).load(function() {
         }
     });
 
-    $('.timeline-item-content > h3').click(function () {
+    $('.timeline-item-content > h3').on('click', function () {
         $trigger = $(this).parent().parent().find('.timeline-item-trigger i');
         if ($trigger.hasClass('fa fa-plus')) {
             $trigger.removeClass('fa fa-plus').addClass('fa fa-minus');
@@ -26,14 +26,14 @@ $(window).load(function() {
     // Scroll to top
     var scrollTimeout;
 
-    $('a.scroll-top').click(function () {
+    $('a.scroll-top').on('click', function () {
         $('html, body').animate({
             scrollTop: 0
         }, 500);
         return false;
     });
 	
-	$(window).scroll(function () {
+	$(window).on('scroll', function () {
         clearTimeout(scrollTimeout);
         if ($(window).scrollTop() > 400) {
             scrollTimeout = setTimeout(function () {
@@ -48,7 +48,7 @@ $(window).load(function() {
 	
 	// Smooth Scrolling https://css-tricks.com/snippets/jquery/smooth-scrolling/
     $(function () {
-        $('a[href*=#]:not([href=#])').click(function () {
+        $('a[href*=\\#]:not([href=\\#])').on('click', function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
